@@ -1,0 +1,9 @@
+{
+    "name": "Skeleton",
+    "version": "0.1.0",
+    "description": "A minimal skin: three layouts, a footer partial, and one translated string.",
+    "license": "Apache-2.0",
+    "author": [
+        "Your Name"
+    ]
+}

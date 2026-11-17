@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title><?= htmlspecialchars($brand['name']) ?> <?= htmlspecialchars(\Nomen\Src\I18n::t('Admin')) ?></title>
-    <link rel="stylesheet" href="/css/style.css?v=k2f9xw6t">
+    <link rel="stylesheet" href="/css/style.css?v=qetluasm">
     <link rel="stylesheet" href="/css/admin.css?v=q7m2vx9k">
     <?php foreach (\Nomen\Src\Plugins::styles() as $href): ?>
         <link rel="stylesheet" href="<?= htmlspecialchars($href) ?>">

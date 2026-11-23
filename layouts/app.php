@@ -12,9 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title><?php $pageTitle = $title ?? $brand['name']; echo htmlspecialchars($pageTitle === $brand['name'] ? $pageTitle : "$pageTitle - " . $brand['name']); ?></title>
-    <link rel="stylesheet" href="/css/style.css?v=qetluasm">
+    <?= \Nomen\Src\Loading::styleTag('/css/style.css?v=qetluasm') ?>
     <?php foreach (\Nomen\Src\Plugins::styles() as $href): ?>
-        <link rel="stylesheet" href="<?= htmlspecialchars($href) ?>">
+        <?= \Nomen\Src\Loading::styleTag($href, false) ?>
     <?php endforeach; ?>
     <link rel="icon" href="<?= htmlspecialchars($brand['logo']) ?>">
     <?= \Nomen\Src\Hooks::filter('layout.head', '', 'app') ?>
